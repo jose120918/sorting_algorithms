@@ -13,7 +13,7 @@ void shell_sort(int *array, size_t size)
 
 	if (!size || !array)
 		return;
-	/*Get gap interval*/
+
 	while (h < size)
 		h = 3 * h + 1;
 
