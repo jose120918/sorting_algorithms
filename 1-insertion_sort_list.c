@@ -10,10 +10,8 @@
 void insertion_sort_list(listint_t **list)
 {
 	listint_t *cur, *t, *t2;
-
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
-
 	for (cur = *list; cur != NULL; cur = cur->next)
 	{
 		t = cur;
@@ -30,7 +28,6 @@ void insertion_sort_list(listint_t **list)
 				print_list(*list);
 				continue;
 			}
-
 			if (t2->prev == NULL)
 			{
 				t->prev = NULL;
@@ -43,7 +40,6 @@ void insertion_sort_list(listint_t **list)
 				print_list(*list);
 				continue;
 			}
-
 			if (t->next == NULL)
 			{
 				t->prev = t2->prev;
@@ -55,6 +51,5 @@ void insertion_sort_list(listint_t **list)
 				continue;
 			}
 		}
-
 	}
 }
